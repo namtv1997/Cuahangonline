@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00aeff"
+    tools:context=".activity.ThongTinActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbarthongtin"
+    android:layout_width="match_parent"
+    app:title="Thông Tin"
+    app:titleTextColor="#f9f6f5"
+    android:layout_height="?attr/actionBarSize">
+
+</android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/thongtin"
+        android:textColor="#fdfdfd"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#e77f1e"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Liên hệ với chúng tôi qua :" />
+
+        <TextView
+            android:textColor="#0e66d2"
+            android:textSize="20sp"
+            android:onClick="lienhefb"
+            android:id="@+id/textviewlienhe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="facebook " />
+    </LinearLayout>
+</LinearLayout>
